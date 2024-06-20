@@ -3,13 +3,11 @@ package HW3;
 import java.io.*;
 
 public class Person implements Serializable {
-    private final long id;
     private final String name;
     private final int age;
     private final transient int salary;
 
-    public Person(long id, String name, int age, int salary) {
-        this.id = id;
+    public Person(String name, int age, int salary) {
         this.name = name;
         this.age = age;
         this.salary = salary;
